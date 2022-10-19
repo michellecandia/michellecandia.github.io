@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="../css/style_page.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <h1>Formularios en html</h1>
+</header>
+<nav>
+	<ul id="menu_interno2">
+	<li>
+	<a href="html/formatos de texto.html">Formatos de texto</a></li>
+	  <li><a href="html/listas.html">Listas </a></li>
+	  <li><a href="html/enlaces.html">Enlaces </a></li>
+	  <li><a href="html/tablas.html">Tablas </a></li>
+	  <li><a href="html/Imagenes.html">Imagenes</a></li>
+	  <li><a href="html/audio.html">Audios</a></li>
+	  <li><a href="html/formulario.html">Formularios</a></li>
+	  <li><a href="video.html">Videos</a></li>
+	</ul>
+</nav>
+<main>
+  <section>
+    <h2>Formulario con input de tipo texto y submit&nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nostrum culpa nulla iste voluptatem suscipit quidem earum, quis officiis debitis. Odio natus vero voluptates, possimus tempora vel, sed officiis nesciunt.</p>
+    <form id="form1" name="form1" method="get" action="">
+      <label for="nombre">Nombre:&nbsp;</label>
+      <input type="text" name="nombre" id="nombre">
+      <label for="apellido">Apellido:</label>
+      <input type="text" name="apellido" id="apellido">
+      <input name="boton1" type="submit" class="btn_style" id="boton1" formaction="procesamiento.html" formmethod="GET" value="Enviar">
+      
+    </form>
+  </section>
+  <section>
+    <h2>Formulario (desplegable,radiobutton y checkbox)&nbsp;&nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non recusandae itaque voluptates eveniet unde, provident ad corporis eos eligendi necessitatibus nulla libero praesentium saepe voluptate magnam perspiciatis aliquid autem magni!</p>
+    <form action="file:///C|/Users/Usuario/Desktop/sitio19488/html/procesamiento.html" method="get" name="form2" id="form2">
+      <label for="pais">Pais:</label>
+      <select name="pais" id="pais">
+        <option value="mx">Mexico</option>
+        <option value="es">España</option>
+        <option value="us">Estados Unidos</option>
+        <option value="ar">Argentina</option>
+        <option value="co">Colombia</option>
+      </select>
+		<br><br>
+      <label for="Genero">Genero:</label>
+      <p>
+        <label>
+          <input type="radio" name="Genero" value="fem" id="Genero_0">
+        femenimo</label>
+        <br>
+        <label>
+          <input type="radio" name="Genero" value="mas" id="Genero_1">
+          Masculino</label>
+        <br>
+        <label>
+          <input type="radio" name="Genero" value="otro" id="Genero_2">
+          otro</label>
+        <br>
+      </p>
+      <label>Musica preferida:</label>
+      <table width="200">
+        <tr>
+          <td><label>
+            <input type="checkbox" name="Musica" value="pos" id="Musica_0">
+            Pop</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="Musica" value="rock" id="Musica_1">
+            Rock</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="Musica" value="jazz" id="Musica_2">
+            Jazz</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="Musica" value="clasica" id="Musica_3">
+            Clasica</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="Musica" value="alternativa" id="Musica_4">
+            Alternativa</label></td>
+        </tr>
+      </table>
+<input name="boton2" type="submit" class="btn_style" id="boton2" formaction="procesamiento.html" formmethod="GET" value="Enviar">
+      
+    </form>
+  </section>
+  <section>
+    <h2>Formulario email y comentario </h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quis asperiores deleniti ipsa adipisci blanditiis dolorem nisi facere rerum, expedita.</p>
+    <form id="form3" name="form3" method="post">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email">
+		<br><br>
+      <label for="textarea">Comentario:</label>
+		<br><br>
+      <textarea name="textarea" cols="0" rows="0" maxlength="100" autofocus="autofocus" class="comentario" id="textarea">Escribe aqui tu comentario...</textarea>
+		<br>
+	<input name="boton3" type="submit" class="btn_style" id="boton3" formaction="procesamiento.html" formmethod="GET" value="Enviar">
+     
+    </form>
+  </section>
+  <section>
+    <h2>Formulario</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, ipsam, ullam. Sed quisquam non ab totam illo rerum temporibus fugit!</p>
+    <form id="form4" name="form4" method="post">
+    
+    <label for="date2">Fecha:</label>
+    <input type="date" name="date2" id="date2">
+    <br><br>
+    <label for="nombre2">Nombre:</label>
+<input type="text" name="nombre2" id="nombre2">
+    	<br><br>
+    <label for="apellido2">
+    Apellido:</label>
+    <input type="text" name="apellido2" id="apellido2">
+<br><br>
+    <label for="email2">Email:</label>
+    <input name="email2" type="email" id="email2" autocomplete="off">
+		<br><br>
+    <label for="tel">Tel:</label>
+    <input type="tel" name="tel" id="tel">
+		
+	<br><br>
+    <label for="number">Edad:</label>
+    <input type="number" name="number" id="number">
+		<br><br>
+    <label for="range">Rango:</label>
+    <input type="range" name="range" id="range">
+<br><br>
+	<label>Genero&nbsp;</label>
+    <p>
+      <label>
+        <input type="radio" name="Genero" value="fe" id="Genero_3">
+        femenimo</label>
+      <br>
+      <label>
+        <input type="radio" name="Genero" value="mas" id="Genero_4">
+        masculino</label>
+      <br>
+      <label>
+        <input type="radio" name="Genero" value="otr" id="Genero_5">
+        otro</label>
+      <br>
+    </p>
+    <label for="select">Estado:</label>
+    <select name="select" id="select">
+      <option value="gua">Guanajuato</option>
+      <option value="gue">Guerrero</option>
+      <option value="chi">Chiapas</option>
+      <option value="hi">Hidalgo</option>
+      <option value="ja">Jalisco</option>
+      <option value="ver">Veracruz</option>
+    </select>
+		<br><br>
+		<label for="color">Elige un color:</label>
+  <select id="color" name="color" size="4" multiple>
+    <option value="rosa">rosa</option>
+    <option value="amarillo">amarillo</option>
+    <option value="azul">azul</option>
+    <option value="rojo">rojo</option>
+  </select>
+		<br><br>
+    <label>Servicios</label>
+    <p>
+      <label>
+        <input type="checkbox" name="servicios " value="lu" id="servicios_0">
+        Luz</label>
+      <br>
+      <label>
+        <input type="checkbox" name="servicios " value="ag" id="servicios_1">
+        Agua</label>
+      <br>
+      <label>
+        <input type="checkbox" name="servicios " value="ga" id="servicios_2">
+        Gas</label>
+      <br>
+      <label>
+        <input type="checkbox" name="servicios " value="in" id="servicios_3">
+        Internet </label>
+      <br>
+    </p>
+		<label for="textarea2">Comentario:</label>
+    <textarea name="textarea2" maxlength="80" autofocus="autofocus" id="textarea2">Escribe aqui tu comentario..</textarea>
+    <input name="submit" type="submit" class="btn_style" id="submit" formaction="procesamiento.html" value="Enviar">
+    
+	</form>
+    
+  </section>
+</main>
+<footer>
+  <h6>Elaborado por Gonzalez Candia Michelle Elizabeth</h6>
+</footer>
+</body>
+</html>
